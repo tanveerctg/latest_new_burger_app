@@ -1,0 +1,38 @@
+.logout{
+  background: transparent;
+  border: 1px solid gray;
+  position: absolute;
+  top:1rem;
+  right:9rem;
+  padding: .4rem;
+  transition: all .1s;
+  border-radius:2px;
+  cursor: pointer;
+  color:gray;
+}
+.logout:hover{
+  color:red;
+}
+.headerContainer{
+  background: orange;
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  padding:1rem 5rem;
+}
+.header{
+  display:grid;
+  grid-template-columns: auto auto auto auto 1fr;
+  align-content: center;
+  justify-content: start;
+  grid-gap:3rem;
+}
+.header h2{
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+.authentication{
+  display:grid;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-content: end;
+}

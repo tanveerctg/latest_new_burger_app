@@ -1,0 +1,122 @@
+.container{
+  position: relative;
+  width:100%;
+}
+.header{
+  display: grid;
+  grid-template-columns: 90% 10%;
+  margin-bottom: 2rem;
+  width:100%;
+  position: relative;
+}
+.closeBtn{
+  position: absolute;
+  right:.5rem;
+}
+.header h1{
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: 'Lato';
+}
+.header button{
+  align-self: center;
+  justify-self: start;
+  background:blue;
+}
+.itmList{
+  display:grid;
+  grid-gap: 7px;
+}
+.priceList{
+  display:grid;
+  grid-gap: 7px;
+}
+.content{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap:7px;
+}
+
+.price{
+  background: black;
+  padding:10px;
+  color: white;
+}
+.totalPrice{
+  display: inline-block;
+  background: gray;
+  width:25%;
+  position: absolute;
+  right:0;
+  margin-top:7px;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.totalPrice::after{
+  position: absolute;
+  content:'';
+  width:100%;
+  height:1px;
+  background: rgb(146, 146, 146);
+  top:110%;
+  left:0;
+}
+.continueBtn{
+  display: inline-block;
+  position: absolute;
+  left:0;
+  margin-top:7px;
+  padding: .5rem;
+  background:#4f5d8a;
+  text-transform: uppercase;
+  color:white;
+  border: transparent;
+  cursor: pointer;
+  transition: all .1s;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.continueBtn:hover{
+  color:white;
+  background: #57699e;
+}
+.disableBtn{
+  background:#343536;
+  color:white;
+}
+.disableBtn:hover{
+  background:#343536;
+}
+.removeBtn{
+  font-size: 25px;
+}
+.increaseBtn{
+  font-size: 25px;
+}
+.decreaseBtn{
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 430px) {
+  .removeBtn{
+    font-size: 20px;
+  }
+  .increaseBtn{
+    font-size: 20px;
+  }
+  .decreaseBtn{
+    font-size: 20px;
+  }
+  .burgerName{
+    font-size: 15px;
+  }
+  .price{
+    font-size: 15px;
+  }
+  .header h1{
+    font-size: 2rem;
+  }
+}

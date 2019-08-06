@@ -1,0 +1,34 @@
+.row{
+  width:90%;
+  margin:0 auto;
+}
+.customizeSection{
+  background:rgba(0,0,0,.5);
+  background-size:cover; 
+  font-family: 'Permanent Marker', cursive;
+  padding:1.2rem 0;
+  font-size: 1rem;
+  background:#F7E77D;
+  color:#292826;;
+}
+
+.customizeContainer{
+  display:grid;
+  grid-auto-flow: column;
+  grid-gap:1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+.customizeBurgerMsg{
+  font-family: 'Kaushan Script', cursive;
+}
+.customizedBtn{
+  color:#F96167;
+  transition:all .3s;
+  cursor: pointer;
+}
+
+.customizedBtn:hover{
+  color:rgb(255, 35, 42);
+  transform: rotate(0);
+}

@@ -1,0 +1,23 @@
+.err {
+ 
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  text-align: center;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 500px;}
+  75%  {top: 200px}
+  100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 500px;}
+  75%  {top: 200px}
+  100% {top: 0px;}
+}

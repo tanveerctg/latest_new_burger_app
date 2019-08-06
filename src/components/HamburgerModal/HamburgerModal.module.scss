@@ -1,0 +1,18 @@
+.hamburgerModal{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:grid;
+  grid-gap:3rem;
+  grid-auto-flow:row;
+  justify-items: center;
+  align-content: center;
+  background:rgba(0,0,0,.9);
+  color:white;
+  z-index: 1000;
+}
+.hamburgerModal h2:hover{
+  cursor: pointer;
+  color:#F9D342;
+}

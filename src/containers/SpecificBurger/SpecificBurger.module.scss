@@ -1,0 +1,217 @@
+.container{
+  display:grid;
+  grid-template-columns: 3fr 25rem;
+  height:105vh;
+  overflow: hidden;
+}
+.descriptionContainer{
+  background: white;
+  padding:3rem 0;
+}
+.description{
+  display:grid;
+  grid-gap:.5rem;
+}
+.checkout{
+  background: white;
+  box-shadow: -5px 5px 5px 5px whitesmoke;
+  padding-top: 5rem;
+}
+.row{
+  width:90%;
+  margin:0 auto;
+}
+.itemsContainer{
+  margin-top:4rem;
+  display:grid;
+  grid-gap:1.4rem;
+}
+.items{
+  display:grid;
+  grid-template-columns: 73% 25%;
+  grid-gap:3%;
+  position: relative;
+}
+.itemDes{
+  padding:0;
+  display:grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-gap:5px;
+}
+.meal{
+  border-bottom: 3px solid black;
+  text-align: center;
+  padding-bottom:.7rem;
+}
+
+.viewCart{
+  position: fixed;
+  bottom:0;
+  padding:1rem;
+  display:none;
+  background: #4f5d8a;
+  z-index: 3000;
+  color:ghostwhite;
+  font-size:1.2rem;
+  font-weight: 500;
+  border:none;
+  width:100%;
+}
+.viewCart:hover{
+  cursor: pointer;
+  background: #5c6b9c;
+}
+.imgContainer{
+  position: relative;
+  height:20rem;
+  width:25rem;
+}
+.burgerImg{
+  position: absolute;
+  height:100%;
+  width:100%;
+}
+.name{
+  font-size: 4.5rem;
+  color: #3C5A99;
+}
+.statement{
+  font-size: 1.2rem;
+  font-family: 'Lato';
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #5f75a7;
+}
+.calorie{
+  font-size: 2rem;
+  color: #5f75a7;
+}
+.addToMeal{
+  align-self: start;
+  justify-self: start;
+  padding: 0 5px;
+  background: #a6cb12;
+  margin: .4rem 0;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.removeBtn:hover{
+  cursor: pointer;
+}
+.increaseBtn:hover{
+  cursor: pointer;
+}
+.decreaseBtn:hover{
+  cursor: pointer;
+}
+.continue{
+  align-self: start;
+  justify-self: start;
+  padding: 0 5px;
+  background:#4f5d8a;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.continue:hover{
+  color:white;
+  background: #57699e;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .checkout{
+    display: none;
+  }
+  .viewCart{
+    display: block;
+  }
+  .row{
+    width:92%;
+  }
+  .imgContainer{
+      height:19rem;
+      width:24rem;
+  }
+  .name{
+    font-size:3.7rem;
+  }
+  .statement {
+  font-size: 1rem;
+  }
+  .calorie {
+  font-size: 1.7rem;
+  }
+  .addToMeal {
+    padding: 3px 8px 3px 8px;
+    font-size: 1rem;
+  }
+  .descriptionContainer{
+    background: white;
+    padding:2rem 0;
+  }
+
+}
+@media only screen and (max-width: 700px) {
+
+  .name{
+    font-size:3rem;
+  }
+  .descriptionContainer{
+    padding:1.5rem 0;
+}
+}
+@media only screen and (max-width: 500px) {
+    .row{
+      width:97%;
+    }
+    .imgContainer{
+        height:15rem;
+        width:20rem;
+    }
+    .name{
+      font-size:2.5rem;
+    }
+    .viewCart{
+      padding: .5rem;
+    }
+    .statement {
+    font-size: 1rem;
+    }
+    .calorie {
+    font-size: 1.4rem;
+    }
+    .addToMeal {
+        padding: 3px 8px 3px 8px;
+        font-size: 1rem;
+    }
+    .descriptionContainer{
+      background: white;
+      padding:.5rem 0;
+    }
+    .container{
+      height:109vh;
+    }
+
+}
+
+// @media only screen and (max-width: 1050px) {
+//   .imgContainer{
+//     height:12rem;
+//     width:20rem;
+// }
+
+// }

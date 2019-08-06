@@ -1,0 +1,35 @@
+
+.ul{
+  position: absolute;
+  top:7rem;
+  left:50%;
+  transform: translateX(-50%);
+  counter-reset:counter-name;
+}
+
+.loadingContainer{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.button{
+  padding:.8rem;
+  background: black;
+  text-transform: uppercase;
+  color:yellow;
+  font-weight: 700;
+  -webkit-clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  position: absolute;
+  top:1rem;
+  left:1rem;
+  border: transparent;
+  cursor: pointer;
+  transition: all .3s;
+}
+.button:hover{
+  background: yellow;
+  color:black;
+  transform: translateY(-2px);
+}

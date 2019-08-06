@@ -1,0 +1,52 @@
+.row{
+  width:90%;
+  margin:0 auto;
+}
+.modal{
+  position: absolute;
+  background:rgba(0,0,0,.9);
+  display:grid;
+  width:100%;
+  top:4rem;
+  justify-items: center;
+  align-items: center;
+  color:white;
+  border-bottom:1px solid#F9D342;
+  border-top:1px solid#F9D342;
+  z-index: 1000;
+}
+.filterGrid{
+  display:grid;
+  grid-template-columns: auto 25rem 12rem;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.slider {
+  width: 24%;
+  display: inline-block;
+  position: relative;
+  margin-left:2rem;
+}
+.slide .rc-slider-rail{
+  background-color:gainsboro;
+}
+.slide .rc-slider-track{
+  background-color:green;
+}
+.slide>.rc-slider-handle{
+  width:26px !important ;
+  height:26px !important ;
+  background-color:gainsboro;
+}
+.slide{
+  width:17rem;
+  display:grid;
+  align-self: center;
+}
+
+@media only screen and (max-width:963px) {
+  .filterGrid{
+    grid-template-columns: 15rem;
+  }
+
+}

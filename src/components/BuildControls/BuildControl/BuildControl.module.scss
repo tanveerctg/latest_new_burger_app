@@ -1,0 +1,149 @@
+.BuildControlContainer{
+  display:grid;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  grid-gap:20px;
+  justify-items: start;
+  grid-template-columns: 1fr auto auto;
+  font-weight: 400;
+}
+
+.text{
+  letter-spacing:2px;
+  font-size:25px;   
+  font-family:'Lato','Courier New';
+  font-weight: 700;
+  color:yellow;
+}
+.Salad{
+  transition:all .1s;
+  cursor: pointer;
+  
+}
+.Salad:hover{
+  transform: rotate(-5deg) scale(1.1);
+}
+.Meat{
+
+  transition:all .1s;
+  cursor: pointer;
+}
+.Meat:hover{
+  transform: rotate(-5deg) scale(1.1);
+}
+.Chicken{
+ 
+  transition:all .1s;
+  cursor: pointer;
+}
+.Chicken:hover{
+  transform: rotate(-5deg) scale(1.1);
+}
+.Cheese{
+ 
+  transition:all .1s;
+  cursor: pointer;
+}
+.Cheese:hover{
+  transform: rotate(-5deg) scale(1.1);
+}
+.add{
+  color: black;
+  background: yellow;
+  transition:all .1s;
+  width:4.3rem;
+  font-weight: 700;
+  border:2px solid yellow;
+  height: 2.4rem;
+  font-size: 1rem;
+  -webkit-clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+.add:hover{
+  cursor:pointer;
+  background: green;
+  transform: translateY(-1px);
+  color:white;
+  border:2px solid green;
+}
+
+.remove{
+  color: black;
+  background: yellow;
+  transition:all .1s;
+  width:4.3rem;
+  font-weight: 700;
+  border:2px solid yellow;
+  height: 2.4rem;
+  font-size: 1rem;
+  -webkit-clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+.remove:hover{
+  cursor:pointer;
+  transform: translateY(-1px);
+  background-color: red;
+  color:white;
+  -webkit-clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+  border:2px solid red;
+}
+.disable{
+  color: black;
+  background: rgb(163, 163, 163);
+  transition:all .1s;
+  width:4.3rem;
+  font-weight: 700;
+  border:2px solid rgb(163, 163, 163);
+  height: 2.4rem;
+  font-size: 1rem;
+  -webkit-clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(4% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+@media only screen and (max-width: 1050px) {
+  .BuildControlContainer{
+    width:65%;
+  }
+
+}
+@media only screen and (max-width: 780px) {
+  .BuildControlContainer{
+    width:75%;
+  }
+  
+.text{
+  letter-spacing:1px;
+  font-size:20px;   
+}
+.add{
+  width:3.8rem;
+  height: 2rem;
+}
+.disable{
+  width:3.8rem;
+  height: 2rem;
+}
+.remove{
+  width:3.8rem;
+  height: 2rem;
+}
+}
+@media only screen and (max-width: 600px) {
+  .BuildControlContainer{
+    width:85%;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  .add{
+    width:3.2rem;
+  }
+  .disable{
+    width:3.2rem;
+  }
+  .remove{
+    width:3.2rem;
+  }
+}

@@ -1,0 +1,33 @@
+.myMeal{
+  width:100%;
+  background: #a6cb12;
+  color:ghostwhite;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: auto;
+}
+.myMeal p{
+  grid-area: right;
+  font-size: 1.2rem;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.8);
+  animation:overlay .2s;
+  overflow: hidden;
+}
+@keyframes overlay{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+.content{
+ width: 10rem;
+}

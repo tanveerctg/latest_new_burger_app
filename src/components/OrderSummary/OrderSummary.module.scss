@@ -1,0 +1,43 @@
+.OrderSummary{
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+.OrderSummary h2{
+  margin:1rem 0;
+}
+.orderItems{
+  list-style: none;
+  padding: 0;
+}
+.orderItems li{
+  background-color: black;
+  color:yellow;
+  padding:.3rem;
+  width:60%;
+  -webkit-clip-path: polygon(0 0, 99% 0, 92% 100%, 0% 100%);
+  clip-path: polygon(0 0, 99% 0, 92% 100%, 0% 100%);
+  font-size:1.1rem;
+  letter-spacing: .2rem;
+  padding: .6rem;
+  
+}
+.orderItems li:not(:last-child){
+  margin-bottom: 1rem;
+}
+.numbersOfLayer{
+  margin-left: .3rem;
+  font-size: 1.5rem;
+}
+.price{
+  font-size: 2rem;
+  margin-bottom:0;
+}
+.title{
+  font-size: 2rem;
+  margin-bottom:0;
+}
+.subTitle{
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom:2rem;
+}

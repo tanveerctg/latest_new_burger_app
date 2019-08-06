@@ -1,0 +1,104 @@
+.orderBtn{
+  background-color:rgb(0, 136, 0);
+  padding: 1rem;
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 4rem;
+  font-size:1.2rem;
+  color:white;
+  margin-top:2rem;
+  border:1px solid transparent;
+  transition: all .1s;
+
+}
+.orderBtn:hover{
+  transform: translateY(-1.1px);
+  cursor: pointer;
+  background-image:linear-gradient(to right bottom ,rgba(0, 136, 0,.9),rgba(9, 68, 9,.9));
+}
+.BuildContolsContainer{
+  background-color:black;
+  padding:1rem;
+
+}
+.price{
+  text-align:center;
+  font-size:2rem;
+  color:whitesmoke;
+  margin-bottom:2rem;
+}
+.mainPrice{
+  color:yellow;
+  font-weight: bolder;
+  font-size: 160%;
+  display: inline-block;
+  transform: rotate(-5deg);
+  margin-right: 10px;
+}
+.button{
+  padding:.5rem;
+  padding-right:.7rem;
+  background: black;
+  text-transform: uppercase;
+  color:yellow;
+  font-weight: 700;
+  -webkit-clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  position: absolute;
+  top:1rem;
+  left:1rem;
+  border: transparent;
+  cursor: pointer;
+  transition: all .2s;
+}
+.button:hover{
+  background: yellow;
+  color:black;
+  transform: translateY(-2px);
+}
+
+.signupButton{
+  padding: .5rem;
+  background:#4f5d8a;;
+  text-transform: uppercase;
+  color:white;
+  position: absolute;
+  top:1rem;
+  left:7rem;
+  border: transparent;
+  cursor: pointer;
+  transition: all .1s;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.signupButton:hover{
+  color:white;
+  background: #57699e;
+}
+
+.signinButton{
+  padding: .5rem;
+  position: absolute;
+  top:1rem;
+  left:12.1rem;
+  border: transparent;
+  cursor: pointer;
+  transition: all .2s;
+  background: transparent;
+  border:1px solid #c9f658;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-weight: 700; 
+  color: #36622b;
+}
+.signinButton:hover{
+  background: #c9f658;
+  color: #36622b;
+}
+@media only screen and (max-width: 500px) {
+  .price{
+    font-size:1.5rem;
+  }
+}

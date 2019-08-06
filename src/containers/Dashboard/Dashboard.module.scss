@@ -1,0 +1,185 @@
+  .container{
+    padding-bottom:3rem;
+    background-size: cover;
+  }
+  header{
+    position: relative;
+    height:3rem;
+    padding-top:1rem;
+    margin-left:2rem;
+  }
+  .signupButton{
+    padding: .3rem;
+    background:#4f5d8a;;
+    text-transform: uppercase;
+    color:white;
+    border: transparent;
+    cursor: pointer;
+    transition: all .1s;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-right:.5rem;
+  }
+  .signupButton:hover{
+    color:white;
+    background: #57699e;
+  }
+
+  .signinButton{
+    padding: .3rem;
+    border: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    background: #c9f658;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 700; 
+    color: #36622b;
+  }
+  .signinButton:hover{
+    background: #d7ff71;
+    color: #36622b;
+  }
+
+  .logout{
+    background: transparent;
+    border: none;
+    padding: .5rem;
+    transition: all .1s;
+    cursor: pointer;
+    color:white;
+    background: none;
+    font-weight: 500; 
+    border:1px solid white;
+  }
+  .logout:hover{
+    color:rgb(209, 209, 209);
+    border-color: rgb(209, 209, 209);
+  }
+  .button_container{
+    position: absolute;
+    left:0;
+  }
+  .create_burger_btn{
+    margin:3rem auto;
+    padding: 20px;
+    background:#0c907d;
+    border:none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .3s;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .01ch;
+    transition: all .3s;
+    transform:  rotate(-.8deg);
+    border-bottom: 3px solid white;
+    font-family: 'Lato';
+
+  }
+  .create_burger_btn:hover{
+    background:#1bd8bc ;
+    color:black;
+  }
+
+  .slider {
+    width: 24%;
+    display: inline-block;
+    position: relative;
+    margin-left:2rem;
+  }
+
+  .filterBurger{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 25px;
+    width:30%;
+    border:2px solid rgb(212, 212, 212);
+    font-size: 1rem;
+    letter-spacing: .07ch;
+    font-size: 1.1rem;
+    outline: none;
+    padding-left: 20px;
+    color:#0c907d;
+    font-weight: 500;
+  }
+  .afterHeader{
+    padding: 10px;
+    margin:1rem auto 2.7rem auto;
+    
+  }
+  .all_burgers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,23rem);
+    grid-auto-rows: 25rem;
+    grid-gap:5rem;
+    padding:2rem;
+    justify-content: center;
+  }
+    
+  .slide .rc-slider-rail{
+    background-color:gainsboro;
+  }
+  .slide .rc-slider-track{
+    background-color:green;
+  }
+  .slide>.rc-slider-handle{
+    width:26px !important ;
+    height:26px !important ;
+  }
+      
+
+
+    @media only screen and (min-width: 970px) {
+      .create_burger_btn{
+        width:38%;
+      }
+      .filterBurger{
+        width:28%;
+      }
+      .slider{
+        width:22%;
+      }
+
+    }
+    @media only screen and (max-width: 970px) {
+      .create_burger_btn{
+        width:35%;
+      }
+      .filterBurger{
+        width:24%;
+      }
+      .slider{
+        width:22%;
+        
+      }
+
+    }
+    @media only screen and (max-width: 799px) {
+      .create_burger_btn{
+        width:90%;
+        font-size: 1.3rem;
+      }
+      .filterBurger{
+        width:85%;     
+        margin:0 0 0 1rem;
+        font-size:95%;
+      }
+      .slider{
+        width:80%;
+        margin-top: 3rem;
+        display:grid;
+        justify-items: center;
+   
+      }
+
+    }
+    @media only screen and (max-width: 450px) {
+      .all_burgers{
+        grid-template-columns: 19rem;
+        padding-top: 4rem;
+      }
+      .create_burger_btn{
+        padding: 18px;
+      }
+    }

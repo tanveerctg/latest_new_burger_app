@@ -1,0 +1,39 @@
+.Modal {
+  position: fixed;
+  z-index:1000;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 23%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  color:black;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top:50%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+@media (min-width: 650px) {
+  .Modal {
+      width: 540px;
+      left: calc(50% - 250px);
+      height:33rem;
+      transform: translate(-50%,-50%);
+      left:50%;
+      top:50%;  
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Modal {
+    width: 85%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+}
