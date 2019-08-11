@@ -63,7 +63,8 @@ class Checkout extends Component {
         orderTime: moment().valueOf(),
         cancelOrderTime: moment()
           .add(10, "minutes")
-          .valueOf()
+          .valueOf(),
+        status: "pending"
       };
     } else {
       data = {
@@ -73,7 +74,8 @@ class Checkout extends Component {
         cancelOrderTime: moment()
           .add(10, "minutes")
           .valueOf(),
-        totalPrice: this.state.totalPrice
+        totalPrice: this.state.totalPrice,
+        status: "pending"
       };
     }
 
