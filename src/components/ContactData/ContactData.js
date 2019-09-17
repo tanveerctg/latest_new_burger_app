@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from "./ContactData.module.scss";
 import Aux from "../../HOC/helper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import bkash from "./bkash.png";
 class ContactData extends Component {
   state = {
     data: {
@@ -373,7 +374,8 @@ class ContactData extends Component {
               display: "inline-block",
               width: "81%",
               display: "flex",
-              justifyContent: "start"
+              justifyContent: "start",
+              position: "relative"
             }}
           >
             <label
@@ -397,6 +399,35 @@ class ContactData extends Component {
             </label>
           </div>
         </div>
+
+        <div style={{ position: "relative", width: "100%" }}>
+          <div
+            style={{
+              display: "inline-block",
+              width: "81%",
+              display: "flex",
+              justifyContent: "start",
+              position: "relative"
+            }}
+          >
+            <label
+              style={{
+                color: "#333333",
+                fontWeight: "600",
+                display: "inline-block"
+              }}
+            >
+              ( &nbsp;
+              <img
+                src={bkash}
+                style={{ width: "60px", display: "inlineBlock" }}
+              ></img>{" "}
+              <span>will be implemented later</span>
+              &nbsp; )
+            </label>
+          </div>
+        </div>
+
         <div>
           <input type="submit" value="Order" />
         </div>

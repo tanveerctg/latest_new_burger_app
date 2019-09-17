@@ -1,0 +1,64 @@
+[debug] [2019-08-11T14:10:53.191Z] ----------------------------------------------------------------------
+[debug] [2019-08-11T14:10:53.193Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tanveer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:https://burgers-territory.firebaseapp.com/
+[debug] [2019-08-11T14:10:53.193Z] CLI Version:   7.2.2
+[debug] [2019-08-11T14:10:53.193Z] Platform:      win32
+[debug] [2019-08-11T14:10:53.193Z] Node Version:  v10.15.3
+[debug] [2019-08-11T14:10:53.194Z] Time:          Sun Aug 11 2019 20:10:53 GMT+0600 (Bangladesh Standard Time)
+[debug] [2019-08-11T14:10:53.195Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-11T14:10:53.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-11T14:10:53.204Z] > authorizing via signed-in user
+[debug] [2019-08-11T14:10:53.204Z] [iam] checking project testing-bc79f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-11T14:10:53.206Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/testing-bc79f:testIamPermissions  
+
+[debug] [2019-08-11T14:10:54.677Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-11T14:10:54.678Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/testing-bc79f  
+ 
+[debug] [2019-08-11T14:10:55.206Z] <<< HTTP RESPONSE 200
+[warn] !  functions: package.json indicates an outdated version of firebase-functions.
+ Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+[info] 
+[info] === Deploying to 'testing-bc79f'...
+[info] 
+[info] i  deploying hosting
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/testing-bc79f/overview
+[debug] [2019-08-11T14:10:58.674Z] TypeError: Cannot read property 'deploys' of undefined
+    at C:\Users\tanveer\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:84:36
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-08-11T14:11:39.452Z] ----------------------------------------------------------------------
+[debug] [2019-08-11T14:11:39.454Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tanveer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:burgers-territory
+[debug] [2019-08-11T14:11:39.454Z] CLI Version:   7.2.2
+[debug] [2019-08-11T14:11:39.454Z] Platform:      win32
+[debug] [2019-08-11T14:11:39.454Z] Node Version:  v10.15.3
+[debug] [2019-08-11T14:11:39.455Z] Time:          Sun Aug 11 2019 20:11:39 GMT+0600 (Bangladesh Standard Time)
+[debug] [2019-08-11T14:11:39.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-11T14:11:39.463Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-11T14:11:39.464Z] > authorizing via signed-in user
+[debug] [2019-08-11T14:11:39.464Z] [iam] checking project testing-bc79f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-11T14:11:39.466Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/testing-bc79f:testIamPermissions  
+
+[debug] [2019-08-11T14:11:40.843Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-11T14:11:40.845Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/testing-bc79f  
+ 
+[debug] [2019-08-11T14:11:41.357Z] <<< HTTP RESPONSE 200
+[warn] !  functions: package.json indicates an outdated version of firebase-functions.
+ Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+[info] 
+[info] === Deploying to 'testing-bc79f'...
+[info] 
+[info] i  deploying hosting
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/testing-bc79f/overview
+[debug] [2019-08-11T14:11:44.388Z] TypeError: Cannot read property 'deploys' of undefined
+    at C:\Users\tanveer\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:84:36
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.

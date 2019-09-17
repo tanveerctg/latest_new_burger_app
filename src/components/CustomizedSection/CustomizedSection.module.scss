@@ -1,34 +1,55 @@
-.row{
-  width:90%;
-  margin:0 auto;
-}
-.customizeSection{
-  background:rgba(0,0,0,.5);
-  background-size:cover; 
-  font-family: 'Permanent Marker', cursive;
-  padding:1.2rem 0;
-  font-size: 1rem;
-  background:#F7E77D;
-  color:#292826;;
+.row {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.customizeContainer{
-  display:grid;
+.customizeSection {
+  background: rgba(0, 0, 0, .5);
+  background-size: cover;
+  font-family: 'Permanent Marker', cursive;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  background: #F7E77D;
+  color: #292826;
+  ;
+}
+
+.customizeContainer {
+  display: grid;
   grid-auto-flow: column;
-  grid-gap:1.5rem;
+  grid-gap: 1.5rem;
   justify-content: center;
   align-content: center;
+  position: relative;
+  width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.customizeBurgerMsg{
+
+.customizeBurgerMsg {
   font-family: 'Kaushan Script', cursive;
+  animation: move 4s infinite;
+  animation-direction: alternate-reverse;
+  position: absolute;
 }
-.customizedBtn{
-  color:#F96167;
-  transition:all .3s;
+
+@keyframes move {
+  from {
+    left: -90px;
+  }
+
+  to {
+    left: -25px;
+  }
+}
+
+.customizedBtn {
+  color: #F96167;
+  transition: all .3s;
   cursor: pointer;
 }
 
-.customizedBtn:hover{
-  color:rgb(255, 35, 42);
+.customizedBtn:hover {
+  color: rgb(255, 35, 42);
   transform: rotate(0);
 }
