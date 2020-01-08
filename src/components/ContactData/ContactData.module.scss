@@ -1,128 +1,150 @@
-
-
-.form{
+.form {
   display: grid;
   justify-content: center;
   grid-template-columns: 450px;
-  margin-top:3rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.form > div{
-  margin-bottom:1.4rem;
+
+.form>div {
+  margin-bottom: 1.4rem;
   display: grid;
   justify-items: center;
 }
-.form>div input,textarea,select{
-  width:100%;
+
+.form>div input,
+textarea,
+select {
+  width: 100%;
   display: block;
-  padding:1rem;
-  border:2px solid black;
+  padding: 1rem;
+  border: 2px solid black;
   transition: all .3s;
   font-size: 1.1rem;
 
 }
-.form>div input,textarea,select{
-  width:81%;
+
+.form>div input,
+textarea,
+select {
+  width: 81%;
 }
 
-.form >div >label{
-  position:relative;
+.form>div>label {
+  position: relative;
   transform: translateY(-100%);
   opacity: 0;
   transition: all .3s;
   font-weight: 700;
 }
-.form>div input:not(:placeholder-shown)+label{
-  opacity:1;
+
+.form>div input:not(:placeholder-shown)+label {
+  opacity: 1;
   transform: translateY(-450%);
 }
 
-.form input[type=submit]{
-  margin-top:0;
+.form input[type=submit] {
+  margin-top: 0;
   background: #4831D4;
   color: whitesmoke;
   font-size: 1.5rem;
   letter-spacing: .3rem;
-  height:4.8rem;
+  height: 4.8rem;
   transition: all .3s;
-  width:81%;
-  border:none;
-  color:white;
+  width: 81%;
+  border: none;
+  color: white;
 }
-.form input[type="submit"]:hover{
+
+.form input[type="submit"]:hover {
   background: rgb(93, 73, 219);
   cursor: pointer;
 }
-.form textarea{
+
+.form textarea {
   font-weight: 700;
   font-size: 1.2rem;
-  height:5rem;
-}
-.form textarea + label{
-  transform: translateY(-100%);
-  opacity:0;
+  height: 5rem;
 }
 
-.form textarea:not(:placeholder-shown)+label{
-  opacity:1;
+.form textarea+label {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.form textarea:not(:placeholder-shown)+label {
+  opacity: 1;
   transform: translateY(-530%);
 }
-.form textarea:not(:placeholder-shown){
-  border:2px solid blueviolet;
+
+.form textarea:not(:placeholder-shown) {
+  border: 2px solid blueviolet;
 }
-.removeBtn{
+
+.removeBtn {
   position: absolute;
-  top:3px;
-  left:3px;
+  top: 3px;
+  left: 3px;
   background: white;
-  border:none;
-  padding:8px;
+  border: none;
+  padding: 8px;
   cursor: pointer;
 }
-.removeBtn:hover{
+
+.removeBtn:hover {
   background: rgb(236, 236, 236);
 }
 
-.form>div input.invalid{
-  border:2px solid red;
-}
-.form>div input.valid{
-  border:2px solid #6DB65B;
-}
-.form>div select.valid{
-  border:2px solid #6DB65B;
-}
-.form>div textarea.valid{
-  border:2px solid #6DB65B;
-}
-.form>div svg{
- opacity:0;
-}
-.form>div input.valid+label+svg{
-  opacity:1;
-}
-.form>div input.invalid+label+svg+svg{
-  opacity:1;
+.form>div input.invalid {
+  border: 2px solid red;
 }
 
-.form>div textarea.valid+label+svg{
-  opacity:1;
-}
-.form>div textarea.invalid+label+svg+svg{
-  opacity:1;
+.form>div input.valid {
+  border: 2px solid #6DB65B;
 }
 
-.form>div select.valid+label+svg{
-  opacity:1;
+.form>div select.valid {
+  border: 2px solid #6DB65B;
 }
-.form>div select.invalid+label+svg+svg{
-  opacity:1;
+
+.form>div textarea.valid {
+  border: 2px solid #6DB65B;
 }
+
+.form>div svg {
+  opacity: 0;
+}
+
+.form>div input.valid+label+svg {
+  opacity: 1;
+}
+
+.form>div input.invalid+label+svg+svg {
+  opacity: 1;
+}
+
+.form>div textarea.valid+label+svg {
+  opacity: 1;
+}
+
+.form>div textarea.invalid+label+svg+svg {
+  opacity: 1;
+}
+
+.form>div select.valid+label+svg {
+  opacity: 1;
+}
+
+.form>div select.invalid+label+svg+svg {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 550px) {
-  .form{
+  .form {
     grid-template-columns: 380px;
   }
-  .form label{
+
+  .form label {
     font-size: 93%;
   }
 }

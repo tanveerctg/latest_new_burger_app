@@ -34,7 +34,7 @@ class ContactData extends Component {
     e.preventDefault();
   };
   emailChangeHandler = e => {
-    const regEx = /^([\w\.?\-?]+)@([[a-z]+)(\.[a-z]{2,8})(\.[a-z]{2,8})?$/gi;
+    const regEx = /^([\w\.?\-?]+)@([a-z]+)(\.[a-z]{2,8})(\.[a-z]{2,8})?$/gi;
     if (e.target.value !== null) {
       if (regEx.test(e.target.value)) {
         let getValue = e.target.value;

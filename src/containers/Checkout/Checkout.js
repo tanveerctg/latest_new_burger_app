@@ -86,9 +86,7 @@ class Checkout extends Component {
         this.setState({ loading: false, message: true });
         this.props.dispatch(getAllOrders(this.props.id));
         fetch(
-          `https://admin-testing-burger-project.firebaseio.com/orders/${
-            this.props.id
-          }.json`,
+          `https://admin-testing-burger-project.firebaseio.com/orders/${this.props.id}.json`,
           {
             method: "POST",
             mode: "cors",
