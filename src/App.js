@@ -15,7 +15,7 @@ import Menu from "./containers/Menu/Menu";
 import ContactUs from "./containers/ContactUs/ContactUs";
 import NewProducts from "./containers/NewProducts/NewProducts";
 import MenuItem from "./containers/MenuItem/MenuItem";
-
+console.log("6th march 2020");
 const App = () => (
   <Layout>
     <Switch>
